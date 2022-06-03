@@ -1,11 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href={% static "css/style.css" %}/>
+
 </head>
 <body>
-<h1>Привет Виталий.</h1>
-<h1>{{ greting_text }}</h1>
+
+<div>
+    <h1>Привет Виталий.</h1>
+    <h1>{{ greeting_text }}</h1>
+    <h2>{{ greeting }}</h2>
+</div>
 </body>
 </html>
